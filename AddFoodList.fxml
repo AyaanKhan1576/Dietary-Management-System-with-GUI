@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.AddFoodListController">
+   <children>
+      <!-- Background Gradient -->
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="429.0" stroke="BLACK" strokeType="INSIDE" width="500.0">
+         <fill>
+           <LinearGradient endX="0.022082018175335713" endY="1.0" startX="0.028391164936101776">
+               <stops>
+                  <Stop>
+                     <color>
+                       <Color red="0.18039216101169586" green="0.47058823704719543" blue="0.30588236451148987" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                      <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+
+      <!-- Title -->
+      <Text layoutX="20.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Food Item" wrappingWidth="460.0">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Text>
+
+      <!-- Food Name Field -->
+      <Text layoutX="20.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Food Name">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="foodNameField" layoutX="20.0" layoutY="130.0" prefHeight="40.0" prefWidth="460.0" promptText="Enter Food Name" />
+
+      <!-- Calories Field -->
+      <Text layoutX="20.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Calories (per serving)">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="caloriesField" layoutX="20.0" layoutY="220.0" prefHeight="40.0" prefWidth="460.0" promptText="Enter Calories (per serving)" />
+
+      <!-- Add Food Button -->
+      <Button fx:id="addFoodButton" layoutX="20.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleAddFood" prefHeight="49.0" prefWidth="460.0" text="Add Food">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Button>
+
+      <!-- Back to Dashboard Button -->
+      <Button fx:id="backToDashboardButton" layoutX="20.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleBackToDashboard" prefHeight="49.0" prefWidth="460.0" text="Back to Dashboard">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.ViewDietPlansController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="401.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.07058823853731155" green="0.27450981736183167" blue="0.32156863808631897" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+       <Text layoutX="226.0" layoutY="36.0" style="-fx-font-family: Arial; -fx-font-size: 24px;" text="Diet Plans" textAlignment="CENTER" wrappingWidth="147.38272094726562">
+         <font>
+            <Font name="Times New Roman Bold" size="26.0" />
+         </font>
+      </Text>
+   
+          <!-- Diet Plans TableView -->
+       <TableView fx:id="dietPlansTable" layoutY="41.0" prefHeight="359.0" prefWidth="600.0">
+           <columns>
+               <TableColumn fx:id="dietPlanNameColumn" prefWidth="200" text="Diet Plan Name" />
+               <TableColumn fx:id="foodItemDetailsColumn" prefWidth="400" text="Food Items" />
+           </columns>
+       </TableView>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleGoBack" text="BACK" />
+      <ImageView fitHeight="92.0" fitWidth="74.0" layoutX="520.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@TISMlogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

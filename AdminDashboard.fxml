@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.AdminDashboardController">
+   <children>
+      <ImageView fitHeight="124.0" fitWidth="120.0" layoutX="480.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@TISMlogo.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="342.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+         <fill>
+            <LinearGradient endX="0.022082018175335713" endY="1.0" startX="0.028391164936101776" startY="0.22082014113946674">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.18039216101169586" green="0.47058823704719543" blue="0.30588236451148987" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.044742729306487705">
+                     <color>
+                        <Color red="0.18039216101169586" green="0.47058823704719543" blue="0.30588236451148987" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text fx:id="titleText" layoutX="16.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Dashboard" wrappingWidth="478.803466796875">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="101.0" fitWidth="161.0" layoutX="490.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@TISMlogo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="viewDietPlansButton" layoutX="323.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleViewDietPlans" prefHeight="49.0" prefWidth="266.0" text="View Diet Plans">
+         <font>
+            <Font name="Times New Roman Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="addFoodListButton" layoutX="14.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleAddFoodList" prefHeight="49.0" prefWidth="266.0" text="Add Food Item">
+         <font>
+            <Font name="Times New Roman Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="addMealsButton" layoutX="323.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleAddMeals" prefHeight="49.0" prefWidth="266.0" text="Add Meals">
+         <font>
+            <Font name="Times New Roman Bold" size="27.0" />
+         </font>
+      </Button>
+      <!-- New Button to View Food Items -->
+      <Button fx:id="viewFoodItemsButton" layoutX="14.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleViewFoodItems" prefHeight="49.0" prefWidth="266.0" text="View Food Items">
+         <font>
+            <Font name="Times New Roman Bold" size="27.0" />
+         </font>
+      </Button>
+      <!-- New Button to Handle Search Food Items -->
+      <Button fx:id="searchFoodItemsButton" layoutX="14.0" layoutY="104.0" mnemonicParsing="false" onAction="#handleSearchFoodItems" prefHeight="49.0" prefWidth="266.0" text="Search Food Items">
+         <font>
+            <Font name="Times New Roman Bold" size="27.0" />
+         </font>
+      </Button>
+      <!-- New Button to Handle Search Diet Plans -->
+      <Button fx:id="searchDietPlanButton" layoutX="323.0" layoutY="104.0" mnemonicParsing="false" onAction="#handleSearchDietPlan" prefHeight="49.0" prefWidth="266.0" text="Search Diet Plans">
+         <font>
+            <Font name="Times New Roman Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="logoutButton" layoutX="255.0" layoutY="292.0" mnemonicParsing="false" onAction="#handleLogout" text="Log Out">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

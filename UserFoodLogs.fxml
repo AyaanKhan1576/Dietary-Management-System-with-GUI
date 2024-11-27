@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.UserFoodLogsController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="460.0" layoutX="-13.0" layoutY="-15.0" stroke="BLACK" strokeType="INSIDE" width="620.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.09148262577478065">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45490196347236633" green="0.4431372582912445" blue="0.7490196228027344" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ListView fx:id="foodLogListView" layoutX="14.0" layoutY="96.0" prefHeight="290.0" prefWidth="279.0" />
+      <ListView fx:id="mealLogListView" layoutX="306.0" layoutY="96.0" prefHeight="290.0" prefWidth="279.0" />
+      <Text layoutX="229.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Todays Log">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="383.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meal Logs">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="91.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Logs">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+      </Text>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleGoBack" text="Back">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+      </Button>
+      <Text fx:id="calorieCountText" layoutX="135.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Calories: " textAlignment="CENTER" wrappingWidth="328.15362548828125">
+         <font>
+            <Font name="Times New Roman Bold" size="21.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="117.0" fitWidth="99.0" layoutX="494.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@TISMlogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

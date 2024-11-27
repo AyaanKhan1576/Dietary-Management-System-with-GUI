@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="509.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.UserDashboardController">
+   <children>
+      <Rectangle height="505.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.36277597710161175">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45490196347236633" green="0.4431372582912445" blue="0.7490196228027344" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="125.0" fitWidth="111.0" layoutX="482.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@TISMlogo.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="titleText" layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Dashboard" wrappingWidth="472.1366882324219">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="LogMealButton" layoutX="12.0" layoutY="385.0" mnemonicParsing="false" onAction="#handleLogFoodItem" prefHeight="49.0" prefWidth="577.0" text="Log Food Item">
+         <font>
+            <Font name="Times New Roman Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="addMealsButton" layoutX="11.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleAddMeals" prefHeight="49.0" prefWidth="577.0" text="Add Meal">
+         <font>
+            <Font name="Times New Roman Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="ViewDietPlansButton" layoutX="11.0" layoutY="147.0" mnemonicParsing="false" onAction="#handleViewDietPlan" prefHeight="49.0" prefWidth="577.0" text="View Current Diet Plan">
+         <font>
+            <Font name="Times New Roman Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="SearchDietPlanButton" layoutX="12.0" layoutY="206.0" mnemonicParsing="false" onAction="#handleSearchDietPlan" prefHeight="49.0" prefWidth="577.0" text="Search Diet Plan">
+         <font>
+            <Font name="Times New Roman Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button layoutX="12.0" layoutY="463.0" mnemonicParsing="false" onAction="#handleLogOut" prefHeight="25.0" prefWidth="577.0" text="Log Out">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="LogMealButton" layoutX="11.0" layoutY="265.0" mnemonicParsing="false" onAction="#handleLogMeal" prefHeight="49.0" prefWidth="577.0" text="Log Meal">
+         <font>
+            <Font name="Times New Roman Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="todaysLogsButton" layoutX="11.0" layoutY="86.0" mnemonicParsing="false" onAction="#handleUserFoodLogs" prefHeight="49.0" prefWidth="577.0" text="View Todays Logs">
+         <font>
+            <Font name="Times New Roman Bold" size="27.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

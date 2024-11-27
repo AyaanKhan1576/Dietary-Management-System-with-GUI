@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.HomeScreenController">
+
+    <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="287.0" prefWidth="355.0">
+
+        <children>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" height="299.0" layoutX="-8.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="372.0">
+            <fill>
+               <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="1.0" green="1.0" blue="1.0" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.07058823853731155" green="0.27450981736183167" blue="0.32156863808631897" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </RadialGradient>
+            </fill>
+         </Rectangle>
+            <!-- Background Image -->
+            <ImageView fitHeight="287.0" fitWidth="359.0" layoutX="-2.0" layoutY="-4.0" opacity="0.64" pickOnBounds="true">
+                <image>
+                    <Image url="@TISMlogo.png" />
+                </image>
+            </ImageView>
+
+            <!-- Title Label -->
+            <Label layoutX="164.0" layoutY="23.0">
+                <font>
+                    <Font name="Times New Roman Bold" size="26.0" />
+                </font>
+            </Label>
+
+            <!-- Admin Login Button -->
+            <Button fx:id="adminLoginButton" layoutX="34.0" layoutY="67.0" mnemonicParsing="false" onAction="#handleAdminLogin" text="ADMIN">
+                <font>
+                    <Font name="System Bold" size="22.0" />
+                </font>
+            </Button>
+
+            <!-- User Login Button -->
+            <Button fx:id="userLoginButton" layoutX="235.0" layoutY="67.0" mnemonicParsing="false" onAction="#handleUserLogin" text="USER">
+                <font>
+                    <Font name="System Bold" size="22.0" />
+                </font>
+            </Button>
+
+            <!-- User Signup Button -->
+            <Button fx:id="userSignupButton" layoutX="34.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleSignup" text="SIGN UP">
+                <font>
+                    <Font name="System Bold" size="22.0" />
+                </font>
+            </Button>
+         <Button fx:id="exitButton" layoutX="243.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleExit" text="EXIT">
+            <font>
+               <Font name="System Bold" size="22.0" />
+            </font>
+         </Button>
+        </children>
+    </Pane>
+
+</VBox>

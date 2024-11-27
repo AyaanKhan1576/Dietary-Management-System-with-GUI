@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="303.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.HealthInfoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="312.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="384.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.1892744479495268">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45490196347236633" green="0.4431372582912445" blue="0.7490196228027344" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="336.0" fitWidth="336.0" layoutX="14.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@TISMlogo.png" />
+         </image>
+      </ImageView>
+   
+          <TextField fx:id="heightField" layoutX="22.0" layoutY="79.0" prefHeight="25.0" prefWidth="149.0" promptText="Enter your height (cm)" />
+       <TextField fx:id="weightField" layoutX="22.0" layoutY="152.0" promptText="Enter your weight (kg)" />
+       <TextField fx:id="ageField" layoutX="22.0" layoutY="220.0" promptText="Enter your age" />
+       
+          <Label layoutX="193.0" layoutY="75.0">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+       <ChoiceBox fx:id="goalField" layoutX="204.0" layoutY="79.0" prefHeight="25.0" prefWidth="129.0" />
+   
+          <Label layoutX="205.0" layoutY="153.0">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+       <ChoiceBox fx:id="allergiesChoiceBox" layoutX="204.0" layoutY="152.0" prefHeight="25.0" prefWidth="129.0" />
+       <ChoiceBox fx:id="diseasesChoiceBox" layoutX="204.0" layoutY="220.0" prefHeight="25.0" prefWidth="129.0" />
+   
+          <Button layoutX="160.0" layoutY="265.0" onAction="#handleSubmit" text="Submit" />
+      <Text layoutX="40.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your Health Information">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="194.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Goal for joining the app:">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="206.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select your allergies:">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="182.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select any diseases you have:">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button layoutX="306.0" layoutY="267.0" mnemonicParsing="false" onAction="#handleIgnore" text="Fill Later" />
+   </children>
+</Pane>
