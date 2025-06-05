@@ -1,6 +1,5 @@
-Dietary Management System with GUI
+# Dietary Management System with GUI
 Software Design and Analysis — Final Project
-Dietary Management System
 
 Group Members:
 
