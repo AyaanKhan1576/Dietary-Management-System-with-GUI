@@ -1,14 +1,10 @@
 # Dietary Management System with GUI
 Software Design and Analysis — Final Project
 
-Group Members:
-
+## Group Members:
 22i-0832 Ayaan Khan
-
 22i-1291 Mishal Ali
-
 22i-0861 Ayaan Mughal
-
 
 A comprehensive Java-based GUI application for tracking and managing dietary habits, meal plans, and nutrition intake. This project supports individuals and nutritionists in monitoring food consumption, analyzing dietary patterns, and generating meal recommendations to promote healthier living.
 
